@@ -36,7 +36,7 @@
                                     $client = (array) json_decode($client);
                                     if (count($client) > 0) {
                                         foreach ($client as $c) {
-                                            echo '<option ' . ($pedido->cd_cliente == $c->id ? 'selected ' : null) . ' value="' . $c->id . '">' . $c->nome . '</option>';
+                                            echo '<option ' . ($p->cd_cliente == $c->id ? 'selected ' : null) . ' value="' . $c->id . '">' . $c->nome . '</option>';
                                         }
                                     } else {
                                         echo '<option value="">Nenhuma Cliente cadastrada.</option>';
@@ -54,7 +54,7 @@
                                     $tipo = (array) json_decode($tipo);
                                     if (count($tipo) > 0) {
                                         foreach ($tipo as $t) {
-                                            echo '<option ' . ($pedido->cd_tipo == $t->id ? 'selected ' : null) . ' value="' . $t->id . '">' . $t->type . '</option>';
+                                            echo '<option ' . ($p->cd_tipo == $t->id ? 'selected ' : null) . ' value="' . $t->id . '">' . $t->type . '</option>';
                                         }
                                     } else {
                                         echo '<option value="">Nenhuma Tipo cadastrada.</option>';
@@ -72,7 +72,7 @@
                                     $status = (array) json_decode($status);
                                     if (count($status) > 0) {
                                         foreach ($status as $s) {
-                                            echo '<option ' . ($pedido->cd_status == $s->id ? 'selected ' : null) . ' value="' . $s->id . '">' . $s->status . '</option>';
+                                            echo '<option ' . ($p->cd_status == $s->id ? 'selected ' : null) . ' value="' . $s->id . '">' . $s->status . '</option>';
                                         }
                                     } else {
                                         echo '<option value="">Nenhuma Status cadastrada.</option>';
