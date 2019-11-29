@@ -6,7 +6,7 @@
  */
 class Login_model extends CI_Model
 {
-    const BASE_URL = 'http://10.10.196.210/REST_OS/rest/';
+    const BASE_URL = 'http://senacsmo.educacao.ws/chih/rest/';
     public function postCURL($params)
     {
         $curl = curl_init();

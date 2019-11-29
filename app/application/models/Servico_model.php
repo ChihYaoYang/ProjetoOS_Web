@@ -6,7 +6,7 @@
 
 class Servico_model extends CI_model
 {
-    const BASE_URL = 'http://10.10.196.210/REST_OS/rest/';
+    const BASE_URL = 'http://senacsmo.educacao.ws/chih/rest/';
     public function getOne($id)
     {
         // Get cURL resource

@@ -20,7 +20,7 @@
     <div class="container mt-5">
         <div class="card mx-auto box" style="max-width: 450px; background: #000000;">
             <br>
-            <h1 class="text-uppercase text-center"><i class="far fa-user"></i> Login</h1>
+            <h1 class="text-uppercase text-center"><i class="fas fa-mobile-alt"></i> Login</h1>
             <div class="card-body text-center">
                 <?php
                 //Mensagem
@@ -30,9 +30,10 @@
                 <form method="POST" action="<?= base_url() . 'Login/loginPhone' ?>" name="login">
                     <input type="text" name="telefone" id="telefone" placeholder="Telefone" required="">
                     <div class="text-center">
-                        <a href="<?= base_url() . 'Login/login' ?>">Login com E-mail</a>
-                        <a href="<?= base_url() . 'Login/loginPhone' ?>">Login com Telefone</a>
+                        <a href="<?= base_url() . 'Login/login' ?>">Logar com E-mail</a>
+                        <a href="<?= base_url() . 'Login/loginPhone' ?>">Logar com Telefone</a>
                     </div>
+                    <br>
                     <button type="submit">Acessar</button>
                 </form>
 

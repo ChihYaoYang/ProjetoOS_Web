@@ -22,7 +22,7 @@
 
 <body>
     <!--Menu Cliente-->
-    <nav class="navbar navbar-dark navbar-expand-md sticky-top" style="background:#7ed6df;">
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top" style="background:#4834d4;">
         <a class="navbar-brand" href="#"><img src="<?php echo base_url('/assets/logo/ic_launcher.png'); ?>" class="img-fluid" alt="logomarca" width="80"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse-side" data-target-sidebar=".side-collapse-right" data-target-content=".side-collapse-container-right" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

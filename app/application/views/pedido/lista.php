@@ -19,7 +19,7 @@
                     <a class="btn btn-primary mr-1" href="<?= base_url('Pedido/newcadastrar') ?>"><i class="fas fa-plus"></i> Add New Pedido</a>
                     <a class="btn btn-info mr-1" href="<?= base_url('Pedido/cadastrar') ?>"><i class="fas fa-plus"></i> Add Pedido</a>
                     <a class="btn btn-success mr-1" href="<?= base_url('Tipo/cadastrar') ?>"><i class="fas fa-plus"></i> Add Tipo</a>
-                    <a class="btn btn-success" href="<?= base_url('Status/cadastrar') ?>"><i class="fas fa-plus"></i> Add Status</a>
+                    <a class="btn btn-info" href="<?= base_url('Status/cadastrar') ?>"><i class="fas fa-plus"></i> Add Status</a>
                     <hr>
                     <thead>
                         <tr class="text-center">

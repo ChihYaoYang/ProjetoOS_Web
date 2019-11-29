@@ -2,7 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
-    background: #74b9ff;
+    background: #535c68;
 }
 
 .box h1 {
@@ -41,7 +41,7 @@ body {
 }
 
 .box a:hover {
-    color: #4834d4;
+    color: #ffffff;
     text-decoration: none;
 }
 
