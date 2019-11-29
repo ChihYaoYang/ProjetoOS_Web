@@ -48,7 +48,7 @@
                 <h5 class="text-uppercase text-light">Instale nosso APP</h5>
                 <div class="row">
                     <img src="<?php echo base_url('/assets/logo/download_qr.png'); ?>" class="img-fluid" width="150" height="150" alt="qrcode">
-                    <a href="https://play.google.com/store/apps/details?id=chihyaoyang.com.br.cadastro_app"><img src="<?php echo base_url('/assets/logo/googleplay.png'); ?>" class="img-fluid"width="150" height="150" alt="googleplay"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.chihyaoyang.api_contatos"><img src="<?php echo base_url('/assets/logo/googleplay.png'); ?>" class="img-fluid"width="150" height="150" alt="googleplay"></a>
                 </div>
             </div>
 
