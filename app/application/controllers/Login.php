@@ -32,14 +32,24 @@ class Login extends CI_Controller
             $usuario = $this->Login_model->postCURL($params);
             $user = (array) json_decode($usuario);
             if ($user != null) {
-                $data = array(
-                    'idUsuario' => $user['id'],
-                    'nome' => $user['nome'],
-                    'email' => $user['email'],
-                    'status' => $user['status'],
-                    'token' => $user['token'],
-                    'logado' => true
-                );
+                if ($user['status'] == 1) {
+                    $data = array(
+                        'idUsuario' => $user['id'],
+                        'nome' => $user['nome'],
+                        'email' => $user['email'],
+                        'status' => $user['status'],
+                        'token' => $user['token'],
+                        'logado' => true
+                    );
+                } else {
+                    $data = array(
+                        'idUsuario' => $user['id'],
+                        'nome' => $user['nome'],
+                        'email' => $user['email'],
+                        'status' => $user['status'],
+                        'logado' => true
+                    );
+                }
                 $this->session->set_userdata($data);
                 if ($user['status'] == 1) {
                     redirect(base_url() . 'Pedido');
@@ -64,14 +74,24 @@ class Login extends CI_Controller
             $usuario = $this->Login_model->loginphone($params);
             $user = (array) json_decode($usuario);
             if ($user != null) {
-                $data = array(
-                    'idUsuario' => $user['id'],
-                    'nome' => $user['nome'],
-                    'email' => $user['email'],
-                    'status' => $user['status'],
-                    'token' => $user['token'],
-                    'logado' => true
-                );
+                if ($user['status'] == 1) {
+                    $data = array(
+                        'idUsuario' => $user['id'],
+                        'nome' => $user['nome'],
+                        'email' => $user['email'],
+                        'status' => $user['status'],
+                        'token' => $user['token'],
+                        'logado' => true
+                    );
+                } else {
+                    $data = array(
+                        'idUsuario' => $user['id'],
+                        'nome' => $user['nome'],
+                        'email' => $user['email'],
+                        'status' => $user['status'],
+                        'logado' => true
+                    );
+                }
                 $this->session->set_userdata($data);
                 if ($user['status'] == 1) {
                     redirect(base_url() . 'Pedido');

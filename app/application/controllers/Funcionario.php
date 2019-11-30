@@ -61,7 +61,11 @@ class Funcionario extends CI_Controller
             $this->email->from('chih.yang@aluno.sc.senac.br', 'Admin');
             $this->email->to($this->input->post('email'));
             $this->email->subject('Baixa nosso aplicativo ou acessar o nosso Site !');
-            $this->email->message('Aqui está seu senha para entrar ! ' . $randpass);
+            $this->email->message('Aqui está seu senha para entrar ! ' . $randpass
+                . "<br>" .
+                'Site: https://ordemservices.000webhostapp.com/'
+                . "<br>" .
+                'APP: https://play.google.com/store/apps/details?id=com.chihyaoyang.api_contatos');
             //Send mail
             if ($this->email->send()) {
                 $this->session->set_flashdata('mensagem', '<div class="alert alert-success"><i class="fas fa-check"></i> Cadastrado com Sucesso! ! !<button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span></button></div>');
